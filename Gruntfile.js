@@ -5,14 +5,32 @@ module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
+        less: {
+            main: {
+                files: {
+                    "css/main.css": "css/less/main.less"
+                }
+            }
+        },
+
+        watch: {
+            main: {
+                files: 'css/less/**/*.less',
+                tasks: ['less'],
+                options: {
+                    nospawn: true
+                }
+            }
+        },
+
         connect: {
             main: {
-                server: {
-                    options: {
-                        port: 8000,
-                        hostname: '*',
-                        target: 'http://localhost:8000', // target url to open
-                        appName: 'open'
+                options: {
+                    port: 8002,
+                    base: ['./','./'],
+                    hostname: 'localhost',
+                    open: {
+                        target: 'http://localhost:8000/index.html'
                     }
                 }
             }
@@ -20,7 +38,7 @@ module.exports = function(grunt) {
     });
 
     // Dev tasks
-    grunt.registerTask('default', ['clean-build', 'newer:copy:main', 'less:main']);
+    grunt.registerTask('default', ['less:main']);
     grunt.registerTask('watch-css', ['default', 'watch:css']);
 
     grunt.registerTask('serve', 'running a dev server', function () {
