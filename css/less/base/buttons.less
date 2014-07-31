@@ -1,0 +1,28 @@
+/*
+  Main button with dark-blue color;
+*/
+.btn-main {
+  background: url(../../../images/buttons/dark-button.png);
+  width: 142px;
+  height: 24px;
+  text-align: center;
+  color: @color-base-inverse;
+  display: inline-block;
+  text-decoration: none;
+  font-family: @font-regular;
+  line-height: 24px;
+  font-size: @font-s;
+  text-transform: uppercase;
+  transition: background 0.6s ease;
+  -moz-transition: background 0.6s ease;
+  -webkit-transition: background 0.6s ease;
+  -o-transition: background 0.6s ease;
+  -ms-transition: background 0.6s ease;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.22);
+
+  &:hover,&:focus {
+    background: url(../../../images/buttons/gray-button.png);
+    color: @color-base-inverse;
+  }
+}
+

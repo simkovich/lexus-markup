@@ -1,0 +1,85 @@
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control {
+  width: auto;
+
+  .arrow-left {
+    background: #2d4158 url(../../../images/icons/arrow_left.png) no-repeat center center;
+    width: 12px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    margin-top: -36px;
+    padding: 25px;
+  }
+
+  .arrow-right {
+    background: #2d4158 url(../../../images/icons/arrow_right.png) no-repeat center center;
+    width: 12px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -36px;
+    padding: 25px;
+  }
+}
+
+.carousel-indicators {
+  bottom: 15px;
+  margin-bottom: 0;
+
+  li {
+    background-color: #fff;
+    &.active {
+      background-color: #0d0d0f;
+      border: 2px solid @color-link-base;
+    }
+  }
+}
+
+.carousel-caption {
+
+  h3 {
+    font-family: @font-regular;
+    background-color: rgba(45, 65, 88, .75);
+    padding: 15px;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    text-align: left;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-shadow: none;
+    margin: 0;
+  }
+  p {
+    background-color: rgba(0, 0, 0, .75);
+    padding: 15px;
+    position: absolute;
+    bottom: 96px;
+    left: 0;
+    text-align: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-shadow: none;
+    color: #fff;
+    clear: both;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .carousel-caption,
+  .carousel-control {
+    display: none;
+  }
+}
+

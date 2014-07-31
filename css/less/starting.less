@@ -1,6 +1,52 @@
+@font-face {
+  font-family: 'Eurofontc';
+  src: url('../../fonts/eurofontc.eot');
+  src: local('☺'), url('../../fonts/eurofontc.woff') format('woff'), url('../../fonts/eurofontc.ttf') format('truetype'), url('../../fonts/eurofontc.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Eurofontc-bold';
+  src: url('../../fonts/eurofontc-bold.eot');
+  src: local('☺'), url('../../fonts/eurofontc-bold.woff') format('woff'), url('../../fonts/eurofontc-bold.ttf') format('truetype'), url('../../fonts/eurofontc-bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*Default text*/
 @color-base: #000;
 @color-base-inverse: #fff;
 
 /*Links*/
 @color-link-base: #34495e;
+
+/*Basic font-family*/
+
+@font-regular: 'Eurofontc';
+@font-bold: 'Eurofontc-bold';
+
+@font-alt1: 'Arial', sans-serif;
+
+@font-s: 12px;
+@font-m: 13px;
+@font-l: 18px;
+
+p {
+  font-size: @font-m;
+  line-height: 18px;
+  color: @color-base;
+  font-family: @font-alt1;
+}
+
+a {
+  color:@color-link-base;
+  font-size: @font-m;
+  text-decoration: underline;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  &:hover,&:focus,&:active{
+    text-decoration: none;
+  }
+}

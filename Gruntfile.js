@@ -5,16 +5,15 @@ module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
-        less: {
-            main: {
-                files: {
-                    "css/main.css": "css/less/main.less"
-                }
-            }
-        },
-
+      less: {
+        main: {
+          files: {
+            "css/main.css": "css/less/main.less"
+          }
+        }
+      },
         watch: {
-            main: {
+            css: {
                 files: 'css/less/**/*.less',
                 tasks: ['less'],
                 options: {
@@ -22,27 +21,26 @@ module.exports = function(grunt) {
                 }
             }
         },
-
-        connect: {
-            main: {
+        browserSync: {
+            dev: {
+                bsFiles: {
+                    src: [
+                        "css/*.css",
+                        "*.html"
+                    ]
+                },
                 options: {
-                    port: 8002,
-                    base: ['./','./'],
-                    hostname: 'localhost',
-                    open: {
-                        target: 'http://localhost:8000/index.html'
-                    }
+                    server: {
+                        baseDir: "./"
+                    },
+                    watchTask: true // < VERY important
                 }
             }
         }
     });
 
     // Dev tasks
-    grunt.registerTask('default', ['less:main']);
-    grunt.registerTask('watch-css', ['default', 'watch:css']);
-
-    grunt.registerTask('serve', 'running a dev server', function () {
-        grunt.task.run('connect:main:keepalive');
-    });
+    grunt.registerTask('default', ['less']);
+    grunt.registerTask('sync', ['browserSync','watch:css']);
 
 };

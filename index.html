@@ -3,72 +3,313 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Lexus - Главная страница</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lexus - Главная страница</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <div class="wrapper">
-            <section class="header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="logo">
-                                <a href="#"><img src="images/logo/lexus.png" alt=""/></a>
-                            </div>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+  <!-- Wrapper -->
+    <div class="wrapper">
+      <!-- Header part -->
+      <section class="header">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                      <div class="header-logo">
+                          <a href="#"><img src="images/logo/lexus.png" alt=""/></a>
+                      </div>
+                      <div class="header-info">
+                          <div class="header-phone">
+                              <i class="header-phone_icon"></i> +7 (495) 506-51-00
+                          </div>
+                          <div class="header-schedule">
+                              <i class="header-schedule_icon"></i>
+                              <div class="header-schedule_info">
+                                  <div class="header-schedule_info_time">с 9-00 до 19-00</div>
+                                  <div class="header-schedule_info_days">пн, вт, ср, чт, пт, <span>сб, вск.</span></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                      <div class="header-actions">
+                          <div class="header-actions_vin">
+                              <a class="header-actions_vin_btn btn-main" href="#777">Запрос по VIN</a>
+                          </div>
+                          <div class="header-actions_feedback">
+                              <a class="header-actions_feedback_call btn-main" href="#777">Заказать звонок</a><br>
+                              <i class="header-actions_feedback_icon"></i> <a class="header-actions_feedback_mail" href="#777">Написать письмо</a>
+                          </div>
+                      </div>
+                      <div class="header-cart">
+                          <div class="header-cart_title">
+                              <i class="cart-light"></i> Корзина
+                          </div>
+                          <div class="header-cart_counts">
+                              <div class="header-cart_counts_prods">Товаров <a href="#777">6</a> шт.</div>
+                              <div class="header-cart_counts_summ">Сумма: 20 000 руб.</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- /Header part -->
+      <!-- Responsive carousel -->
+      <section class="responsive-carousel">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/carousel/slide1.png" alt="Slide1" class="img-responsive">
+                        <div class="container carousel-caption">
+                            <p>Lexus</p>
+                            <h3>RC Concept car</h3>
                         </div>
-                        <div class="col-lg-6 col-md-6"></div>
+                    </div>
+                    <div class="item">
+                        <img src="images/carousel/slide2.png" alt="Slide1" class="img-responsive">
+                        <div class="container carousel-caption">
+                            <p>Lexus</p>
+                            <div class="clearfix"></div>
+                            <h3>RC Concept car</h3>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <section class="responsive-carousel">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="images/carousel/slide1.png" alt="Slide1" class="img-responsive">
-                            <div class="container carousel-caption">
-                                <p>Lexus</p>
-                                <h3>RC Concept car</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="images/carousel/slide2.png" alt="Slide1" class="img-responsive">
-                            <div class="container carousel-caption">
-                                <p>Lexus</p>
-                                <div class="clearfix"></div>
-                                <h3>RC Concept car</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                        <span class="arrow-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                        <span class="arrow-right"></span>
-                    </a>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="arrow-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="arrow-right"></span>
+                </a>
+            </div>
+        </section>
+      <!-- /Responsive carousel -->
+      <!-- Main content section -->
+      <section class="main-cnt">
+        <div class="container shadow">
+          <h2 class="h2">Каталог подбора автозапчастей на Lexus</h2>
+          <!-- list-selection cars -->
+          <div class="ctlg-selection">
+            <div class="row">
+              <div class="col-md-3 ctlg-selection_box">
+                <div class="ctlg-selection_box_i">
+                  <img src="images/cars/car_1.png" alt="Автомобиль"/>
+                  <a href="#777"><span>CT</span></a>
+                  <ul class="model-list_ul">
+                    <li class="model-list_li">
+                      <a href="#777">W168 <span>(2001-2013)</span></a>
+                    </li>
+                    <li class="model-list_li">
+                      <a href="#777">W169 <span>(2001-2013)</span></a>
+                    </li>
+                    <li class="model-list_li">
+                      <a href="#777">W176 <span>(2001-2013)</span></a>
+                    </li>
+                  </ul>
                 </div>
-            </section>
+              </div>
+              <div class="col-md-3 ctlg-selection_box">
+                <div class="ctlg-selection_box_i">
+                  <img src="images/cars/car_1.png" alt="Автомобиль"/>
+                  <a href="#777"><span>CT</span></a>
+                  <ul class="model-list_ul">
+                    <li class="model-list_li">
+                      <a href="#777">W168 <span>(2001-2013)</span></a>
+                    </li>
+                    <li class="model-list_li">
+                      <a href="#777">W169 <span>(2001-2013)</span></a>
+                    </li>
+                    <li class="model-list_li">
+                      <a href="#777">W176 <span>(2001-2013)</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 ctlg-selection_box">
+                <div class="ctlg-selection_box_i">
+                  <img src="images/cars/car_1.png" alt="Автомобиль"/>
+                  <a href="#777"><span>CT</span></a>
+                  <ul class="model-list_ul">
+                    <li class="model-list_li">
+                      <a href="#777">W168 <span>(2001-2013)</span></a>
+                    </li>
+                    <li class="model-list_li">
+                      <a href="#777">W169 <span>(2001-2013)</span></a>
+                    </li>
+                    <li class="model-list_li">
+                      <a href="#777">W176 <span>(2001-2013)</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 ctlg-selection_box">
+                <div class="ctlg-selection_box_i">
+                  <img src="images/cars/car_1.png" alt="Автомобиль"/>
+                  <a href="#777"><span>CT</span></a>
+                  <ul class="model-list_ul">
+                    <li class="model-list_li">
+                      <a href="#777">W168 <span>(2001-2013)</span></a>
+                    </li>
+                    <li class="model-list_li">
+                      <a href="#777">W169 <span>(2001-2013)</span></a>
+                    </li>
+                    <li class="model-list_li">
+                      <a href="#777">W176 <span>(2001-2013)</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 ctlg-selection_box">
+                <div class="ctlg-selection_box_i">
+                  <img src="images/cars/car_1.png" alt="Автомобиль"/>
+                  <a href="#777"><span>CT</span></a>
+                  <ul class="model-list_ul">
+                    <li class="model-list_li">
+                      <a href="#777">W168 <span>(2001-2013)</span></a>
+                    </li>
+                    <li class="model-list_li">
+                      <a href="#777">W169 <span>(2001-2013)</span></a>
+                    </li>
+                    <li class="model-list_li">
+                      <a href="#777">W176 <span>(2001-2013)</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 ctlg-selection_box">
+                <div class="ctlg-selection_box_i">
+                  <img src="images/cars/car_1.png" alt="Автомобиль"/>
+                  <a href="#777"><span>CT</span></a>
+                  <ul class="model-list_ul">
+                    <li class="model-list_li">
+                      <a href="#777">W168 <span>(2001-2013)</span></a>
+                    </li>
+                    <li class="model-list_li">
+                      <a href="#777">W169 <span>(2001-2013)</span></a>
+                    </li>
+                    <li class="model-list_li">
+                      <a href="#777">W176 <span>(2001-2013)</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 ctlg-selection_box">
+                <div class="ctlg-selection_box_i">
+                  <img src="images/cars/car_1.png" alt="Автомобиль"/>
+                  <a href="#777"><span>CT</span></a>
+                  <ul class="model-list_ul">
+                    <li class="model-list_li">
+                      <a href="#777">W168 <span>(2001-2013)</span></a>
+                    </li>
+                    <li class="model-list_li">
+                      <a href="#777">W169 <span>(2001-2013)</span></a>
+                    </li>
+                    <li class="model-list_li">
+                      <a href="#777">W176 <span>(2001-2013)</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 ctlg-selection_box">
+                <div class="ctlg-selection_box_i">
+                  <img src="images/cars/car_1.png" alt="Автомобиль"/>
+                  <a href="#777"><span>CT</span></a>
+                  <ul class="model-list_ul">
+                    <li class="model-list_li">
+                      <a href="#777">W168 <span>(2001-2013)</span></a>
+                    </li>
+                    <li class="model-list_li">
+                      <a href="#777">W169 <span>(2001-2013)</span></a>
+                    </li>
+                    <li class="model-list_li">
+                      <a href="#777">W176 <span>(2001-2013)</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 ctlg-selection_box">
+                <div class="ctlg-selection_box_i">
+                  <img src="images/cars/car_1.png" alt="Автомобиль"/>
+                  <a href="#777"><span>CT</span></a>
+                  <ul class="model-list_ul">
+                    <li class="model-list_li">
+                      <a href="#777">W168W168W168 <span>(2001-2013)</span></a>
+                    </li>
+                    <li class="model-list_li">
+                      <a href="#777">W169W168 <span>(2001-2013)</span></a>
+                    </li>
+                    <li class="model-list_li">
+                      <a href="#777">W176 <span>(2001-2013)</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /list-selection cars -->
+          <div class="clearfix"></div>
+          <!-- Special seo-block for text -->
+          <div class="seo-txt">
+            <p>Тойота всегда производил качественне люксовые машины. С конца восьмидесятых
+              годов, модельный ряд Тойота пополнился автомобилями для простых людей.
+              С тех пор и до конца девяностых годов, у компании были незначительные проблемы
+              с качеством сборки автомобилей. но, тем не менее, они поьзовались и продолжают
+              пользоватсья популярностью. Технические характеристики Тойота всегда были
+              выдающимися на фоне конкурентов. Двигатели велики и мощны ровно настолько,
+              чтобы обеспечить водиделю аксимальный комфорт. С 1993 года, производитель
+              делит автомобили Тойота на классы с буквенным обозначением. Среди них есть и
+              маленькие переднеприводные хэтчбеки, и спортивные, комфортные купе и седаны, и
+              большие джипы. Сейчас компания развита во всех направлениях автомобилестроения.
+              И в современном модельном ряде Тойота кажный найдет свой автомобиль.</p>
+          </div>
+          <!-- /Special seo-block for text -->
+          <div class="clearfix"></div>
+          <!-- Footer section -->
+          <footer class="footer">
+            <nav class="footer-nav">
+              <ul class="footer-nav_ul">
+                <li class="footer-nav_li"><a href="#777">О компании</a></li>
+                <li class="footer-nav_li"><a href="#777">Оплата</a></li>
+                <li class="footer-nav_li"><a href="#777">Доставка</a></li>
+                <li class="footer-nav_li"><a href="#777">Скидки</a></li>
+                <li class="footer-nav_li"><a href="#777">Обмен и возврат</a></li>
+                <li class="footer-nav_li"><a href="#777">Новости</a></li>
+                <li class="footer-nav_li"><a href="#777">Статьи</a></li>
+                <li class="footer-nav_li"><a href="#777">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="footer_cart">
+              <div class="footer_cart_inf">
+                <i class="cart-dark"></i> Корзина: <span><a href="#777">5</a> шт.</span>
+              </div>
+              <a class="btn-main footer_cart_r" href="#777">Оформить заказ</a>
+            </div>
+            <div class="clearfix"></div>
+          </footer>
+          <!-- /Footer section -->
         </div>
-
-        <script src="js/vendor/jquery-1.10.2.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+      </section>
+      <!-- /Main content section -->
+    </div>
+    <!-- / Wrapper -->
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

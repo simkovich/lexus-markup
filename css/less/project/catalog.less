@@ -1,0 +1,102 @@
+.ctlg-selection {
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+
+.ctlg-selection_box:after {
+  content: "";
+  padding-top: 72%;
+  display: block;
+}
+
+.ctlg-selection_box_i {
+  background: #fff;
+  border: 5px solid #f8f8f8;
+  bottom: 7px;
+  left: 15px;
+  position: absolute;
+  right: 15px;
+  top: 7px;
+  text-align: center;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+    &:hover {
+      border: 5px solid rgba(103,119,134,1);
+      &>a {
+        &>span {
+          background-color: rgba(103,119,134,0.75);
+        }
+      }
+    }
+    &:hover:before {
+      content: url(../../../images/hover-car-layer.png);
+      position: absolute;
+      left: -5px;
+      top: -5px;
+    }
+    & > a {
+      bottom: 0;
+      color: #333;
+      font-size: 1.4em;
+      left: 0;
+      line-height: 16px;
+      overflow: hidden;
+      position: absolute;
+      right: 0;
+      text-overflow: ellipsis;
+      text-transform: capitalize;
+      top: 0;
+      white-space: nowrap;
+      z-index: 2;
+        & > span {
+          bottom: 17px;
+          left: 0px;
+          position: absolute;
+          padding: 5px 10px;
+          font-family: @font-regular;
+          font-size: (@font-size-l)-1;
+          text-transform: uppercase;
+          color: @color-base-inverse;
+          background-color: rgba(0, 0, 0, 0.75);
+        }
+    }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.model-list_ul {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  z-index: 3;
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  .model-list_li {
+    font-size: @font-size-m;
+    background-color: rgba(103,119,134,1);
+    font-family: @font-regular;
+    text-align: left;
+
+    &:hover {
+      background-color: #95a5a6;
+    }
+
+    & > a {
+      padding: 10px 12px;
+      display: inline-block;
+      color: @color-base-inverse;
+      text-decoration: none;
+      & > span {
+        font-size: 11px;
+      }
+    }
+  }
+}
+
