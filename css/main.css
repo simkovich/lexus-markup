@@ -6188,6 +6188,7 @@ p {
   line-height: 18px;
   color: #000000;
   font-family: 'Arial', sans-serif;
+  margin-bottom: 5px;
 }
 a {
   color: #34495e;
@@ -6201,6 +6202,9 @@ a:hover,
 a:focus,
 a:active {
   text-decoration: none;
+}
+.img-bordered {
+  border: 5px solid #f8f8f8;
 }
 /*
   Main button with dark-blue color;
@@ -6277,6 +6281,47 @@ a:active {
   background: url(../../../images/main/grd-top.png) repeat-x left top;
   box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
   padding-top: 40px;
+}
+/*
+  Customizing form here
+*/
+.vin-selection_prms label {
+  margin-top: 6px;
+}
+.form-control {
+  border: 1px solid #bfafd0;
+}
+.form-control.mini {
+  height: 27px;
+}
+/*
+  Breadcrumbs
+*/
+.breadcrumb {
+  background-color: transparent;
+  padding: 8px 0;
+}
+.breadcrumb li {
+  font-size: 13px;
+  font-family: 'Eurofontc';
+}
+.breadcrumb li a {
+  color: #252525;
+}
+.breadcrumb .active {
+  color: #34495e;
+}
+/*
+  Elements of pagination
+*/
+.pager li > a,
+.pager li > span {
+  color: #1e2533;
+  border: none;
+  border-radius: 0;
+  font-family: 'Eurofontc';
+  padding: 5px 10px;
+  text-decoration: none;
 }
 .seo-txt {
   margin: 15px 0;
@@ -6377,6 +6422,9 @@ a:active {
 .header-cart .header-cart_counts {
   font-size: 12px;
   margin-left: 25px;
+}
+.header-cart .header-cart_counts a {
+  color: #ffffff;
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -6546,6 +6594,45 @@ a:active {
 }
 .model-list_ul .model-list_li > a > span {
   font-size: 11px;
+}
+/*
+  Styles for news
+*/
+.news {
+  margin-top: 20px;
+}
+.news-block {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 24px;
+}
+.news-block .news-block_preview {
+  width: 290px;
+  float: left;
+  margin-right: 20px;
+}
+.news-block .news-block_info {
+  width: 830px;
+  float: left;
+}
+.news-block .news-block_info .news-block_date {
+  color: #747474;
+  font-size: 12px;
+}
+.news-block .news-block_info .news-block_t {
+  background-color: #6c6d72;
+  padding: 5px 10px;
+  font-size: 15px;
+  margin: 5px 0;
+}
+.news-block .news-block_info .news-block_t a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.news-block .news-block_info .news-block_desc {
+  font-size: 13px;
+  color: #000000;
+  line-height: 28px;
 }
 .footer {
   margin-top: 23px;
