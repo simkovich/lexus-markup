@@ -100,3 +100,193 @@
   }
 }
 
+.ctlg-sidebar_cat_ul {
+  margin: 0 0 20px 0;
+  padding: 12px 0;
+  background-color: #f8f8f8;
+  list-style: none;
+  font-family: @font-regular;
+
+  .ctlg-sidebar_cat_li {
+    width: 100%;
+    display: inline-block;
+
+    &>a {
+      width: 100%;
+      display: inline-block;
+      padding: 6px 23px;
+      text-decoration: none;
+      font-size: @font-size-m;
+      color: #252525;
+      
+      &:hover {
+        background-color: @color-link-base;
+        color: @color-base-inverse;
+      }
+    }
+
+    .subcat_ul {
+      margin: 0;
+      padding: 0;
+      display: none;
+
+      .subcat_li {
+        width: 100%;
+        display: inline-block;
+        margin: 6px 0;
+        
+        &>a {
+          width: 100%;
+          display: inline-block;
+          padding: 0 23px 0 35px;
+          text-decoration: none;
+          font-size: @font-size-s;
+          color: #252525;
+
+          &:hover {
+            color: @color-link-base;
+            border-left: 3px solid @color-link-base;
+          }
+        }
+      }
+      .subcat_li.active {
+        a {
+          color: @color-link-base;
+          border-left: 3px solid @color-link-base;
+        }
+      }
+    }
+  }
+  .ctlg-sidebar_cat_li.active > a {
+    background-color: @color-link-base;
+    color: @color-base-inverse;
+  }
+}
+
+
+
+.ctlg-sidebar_filter {
+  font-family: @font-regular;
+  color: #1e2533;
+
+  .ctlg-sidebar_filter_cnt {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px dotted #d2d2d2;
+
+    .ctlg-sidebar_filter_t {
+      font-size: (@font-size-l)-1;
+      margin-bottom: 20px;
+    }
+
+    .ctlg-sidebar_filter_ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      .ctlg-sidebar_filter_li {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+
+    label {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-weight: normal;
+    }
+
+    input[type=checkbox].css-checkbox {
+      position: absolute;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      height:1px;
+      width:1px;
+      margin:-1px;
+      padding:0;
+      border:0;
+    }
+
+    input[type=checkbox].css-checkbox + label.css-label {
+      padding-left:30px;
+      height:15px;
+      display:inline-block;
+      line-height:15px;
+      background-repeat:no-repeat;
+      background-position: 0 0;
+      font-size:15px;
+      vertical-align:middle;
+      cursor:pointer;
+    }
+
+    input[type=checkbox].css-checkbox:checked + label.css-label {
+      background-position: 0 -15px;
+    }
+
+    .css-label{
+      background-image:url(http://csscheckbox.com/checkboxes/dark-check-green.png);
+    }
+
+    /*specific classes related to Checkbox skins*/
+
+    .lite-green-check{background-image:url(http://csscheckbox.com/checkboxes/lite-green-check.png);}
+  }
+
+}
+
+.sel-mod {
+  font-family: @font-regular;
+
+  label {
+    font-weight: normal;
+    margin-top: 3px;
+  }
+}
+
+.sort {
+  font-family: @font-regular;
+  border-bottom: 1px solid @heading-border-btm;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.sort_ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+
+  .sort_li {
+    display: inline-block;
+    font-size: (@font-size-m)-1;
+    color: #1e2533;
+    margin-right: 10px;
+
+    a {
+      color: #1e2533;
+      text-decoration: none;
+
+      &:hover {
+        color: @color-link-base;
+      }
+    }
+  }
+}
+
+.page_el_ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+
+  .page_el_li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+
+

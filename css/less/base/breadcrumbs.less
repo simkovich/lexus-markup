@@ -4,7 +4,8 @@
 
 .breadcrumb {
   background-color: transparent;
-  padding: 8px 0;
+  padding: 0 0 8px 0;
+  margin-bottom: 10px;
 
   li {
     font-size: @font-size-s;
@@ -12,6 +13,11 @@
     a {
       color: #252525;
     }
+  }
+
+  li+li:before {
+    content: "\203A";
+    color: #252525;
   }
 
   .active {
