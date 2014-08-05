@@ -1,0 +1,36 @@
+/*
+  Product-details styles
+*/
+
+.prod-det_pht {
+  float: left;
+  width: 21%;
+  border: 5px solid #677786;
+  position: relative;
+  text-align: center;
+  margin-right: 20px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.prod-det_pht:before {
+  content: url(../../../images/hover-car-layer.png);
+  position: absolute;
+  left: -5px;
+  top: -5px;
+}
+
+.prod-det_info {
+  float: left;
+  width: 77%;
+
+  .prod-det_t {
+    font-family: @font-regular;
+    font-size: 17px;
+    color: #252525;
+    margin-bottom: 10px;
+  }
+}

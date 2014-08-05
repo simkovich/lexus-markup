@@ -12,6 +12,7 @@
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
     <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   </head>
   <body>
   <!-- Wrapper -->
@@ -63,42 +64,39 @@
       <!-- /Header part -->
       <!-- Responsive carousel -->
       <section class="responsive-carousel">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <div id="slider" class="sl-slider-wrapper">
 
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                </ol>
+          <div class="sl-slider">
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="images/carousel/slide1.png" alt="Slide1" class="img-responsive">
-                        <div class="container carousel-caption">
-                            <p>Lexus</p>
-                            <h3>RC Concept car</h3>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/carousel/slide2.png" alt="Slide1" class="img-responsive">
-                        <div class="container carousel-caption">
-                            <p>Lexus</p>
-                            <div class="clearfix"></div>
-                            <h3>RC Concept car</h3>
-                        </div>
-                    </div>
+            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+              <div class="sl-slide-inner">
+                <div class="bg-img bg-img-1"></div>
+                <div class="container">
+                  <h3 class="sl-mark">Lexus</h3>
+                  <h2 class="sl-model">RC concept car</h2>
                 </div>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="arrow-left"></span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="arrow-right"></span>
-                </a>
+              </div>
             </div>
-        </section>
+
+            <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+              <div class="sl-slide-inner">
+                <div class="bg-img bg-img-2"></div>
+                <h2>Regula aurea.</h2>
+                <blockquote><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p></blockquote>
+              </div>
+            </div>
+          </div><!-- /sl-slider -->
+          <nav id="nav-arrows" class="nav-arrows">
+            <span class="nav-arrow-prev">Previous</span>
+            <span class="nav-arrow-next">Next</span>
+          </nav>
+          <nav id="nav-dots" class="nav-dots">
+            <span class="nav-dot-current"></span>
+            <span></span>
+          </nav>
+
+        </div><!-- /slider-wrapper -->
+      </section>
       <!-- /Responsive carousel -->
       <!-- Main content section -->
       <section class="main-cnt">
@@ -310,6 +308,8 @@
     <!-- / Wrapper -->
     <script src="js/vendor/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/carousel/jquery.ba-cond.min.js"></script>
+    <script src="js/carousel/jquery.slitslider.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
