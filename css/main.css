@@ -6245,6 +6245,9 @@ a:active {
   display: inline-block;
   text-decoration: none;
 }
+.btn-general:hover {
+  color: #fffffe;
+}
 .btn-general.lrg {
   font-size: 14px;
   width: 100%;
@@ -6442,6 +6445,49 @@ h4 {
 /* Product info table */
 .prod-table > tbody > tr > td {
   padding: 8px 8px 8px 0;
+}
+/* Cart table styles */
+.cart-table > thead > tr > th,
+.cart-table > tbody > tr > th {
+  font-family: 'Eurofontc';
+  font-weight: normal;
+  padding-bottom: 20px;
+}
+.cart-table > tbody > tr > td {
+  vertical-align: middle;
+}
+.cart-table > tbody > tr:hover {
+  background-color: #fef9bd;
+}
+.cart-table > tbody > tr:first-child:hover {
+  background-color: #fff;
+}
+.cart-table {
+  font-size: 12px;
+}
+.cart-table_a {
+  width: 90px!important;
+}
+.cart-table_t {
+  width: 610px!important;
+}
+.cart-table_i {
+  width: 50px!important;
+}
+.cart-table_term {
+  width: 100px!important;
+}
+.cart-table_price {
+  width: 80px!important;
+}
+.cart-table_count {
+  width: 90px!important;
+}
+.cart-table_summ {
+  width: 70px!important;
+}
+.cart-table_del {
+  width: 50px!important;
 }
 /*
   Breadcrumbs
@@ -7507,6 +7553,61 @@ h4 {
   font-size: 17px;
   color: #252525;
   margin-bottom: 10px;
+}
+/*
+  Steps menu for cart and checkout
+*/
+.steps {
+  padding: 30px 0;
+  border-top: 1px solid #95a5a6;
+  border-bottom: 1px solid #95a5a6;
+  margin-bottom: 30px;
+}
+.steps_ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+.steps_ul .steps_li {
+  list-style: none;
+  display: inline-block;
+  font-family: 'Eurofontc';
+}
+.steps_ul .steps_li a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #b2b2b2;
+}
+.steps_ul .steps_li a:hover {
+  color: #34495e;
+}
+.steps_ul .steps_li:after {
+  content: url(../../../images/icons/steps_arrow.png);
+  display: inline-block;
+  margin: 0 28px 3px 28px;
+}
+.steps_ul .steps_li:last-child:after {
+  content: "";
+}
+.steps_ul .steps_li.active a {
+  color: #34495e;
+}
+/*
+  Cart block
+*/
+.cart-result {
+  text-align: right;
+  font-family: 'Eurofontc-bold';
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.cart-result .cart-result_t {
+  color: #1e2533;
+  margin-right: 15px;
+}
+.cart-result .cart-result_t > span {
+  color: #c61633;
 }
 .footer {
   margin-top: 23px;
