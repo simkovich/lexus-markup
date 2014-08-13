@@ -6228,6 +6228,7 @@ a:active {
   -o-transition: background 0.6s ease;
   -ms-transition: background 0.6s ease;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.22);
+  border: none;
 }
 .btn-main:hover,
 .btn-main:focus {
@@ -6251,6 +6252,49 @@ a:active {
 .btn-general.lrg {
   font-size: 14px;
   width: 100%;
+}
+/*
+  Website modal windows (customizing bootstrap modals)
+*/
+.modal-dialog {
+  width: 460px;
+}
+.modal-content {
+  border-radius: 0;
+}
+.modal-header {
+  padding: 5px 0 0 0;
+  position: relative;
+}
+.modal-title {
+  position: relative;
+  overflow: hidden;
+  padding: 0 10px 5px 10px;
+  width: 100%;
+  color: #252525;
+}
+.modal-title:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #1e2533;
+}
+.modal-title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #95a5a6;
+}
+button.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 99;
 }
 .cart-dark:before {
   content: url(../../../images/icons/footer_cart.png);
@@ -6282,6 +6326,13 @@ a:active {
   width: 14px;
   height: 11px;
   display: inline-block;
+}
+.icon-attention:before {
+  content: url(../../../images/icons/atterntion.png);
+  width: 12px;
+  height: 11px;
+  display: inline-block;
+  margin-right: 4px;
 }
 h1 {
   font-size: 24px;
@@ -6351,6 +6402,77 @@ h4 {
   height: 27px;
   font-size: 12px;
   padding: 4px 12px;
+}
+.modal-form label {
+  margin-top: 5px;
+}
+.file-wrapper {
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  margin-top: 5px;
+}
+.file-wrapper .button {
+  background: #4ec078;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(top, #4ec078 0%, #23b178 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4ec078), color-stop(100%, #23b178));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #4ec078 0%, #23b178 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #4ec078 0%, #23b178 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #4ec078 0%, #23b178 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #4ec078 0%, #23b178 100%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ec078', endColorstr='#23b178', GradientType=0);
+  /* IE6-9 */
+
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Eurofontc';
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 5px;
+  padding: 4px 18px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.22);
+  letter-spacing: 1px;
+}
+.file-wrapper input {
+  cursor: pointer;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 100px;
+  filter: alpha(opacity=1);
+  -moz-opacity: 0.01;
+  opacity: 0.01;
+}
+.custom_i_t {
+  width: 64%!important;
+  margin-right: 10px;
+  float: left;
+}
+.photo_name {
+  font-size: 13px;
+  color: #666;
+  margin-top: 10px;
 }
 /*
   Restyling bootstrap tables and add new styles
@@ -6535,7 +6657,7 @@ h4 {
   background-color: rgba(0, 0, 0, 0.75);
   padding: 15px 0;
   position: absolute;
-  z-index: 9999;
+  z-index: 9;
   width: 100%;
 }
 .header-logo,
@@ -6555,16 +6677,16 @@ h4 {
   color: #ffffff;
   font-family: 'Eurofontc-bold';
 }
+.header-info .header-schedule {
+  font-size: 11px;
+  color: #dddfe2;
+  font-family: 'Arial', sans-serif;
+}
 .header-phone_icon {
   background: url(../../../images/icons/header-phone.png);
   width: 14px;
   height: 14px;
   margin: 5px 7px 0 0;
-}
-.header-info .header-schedule {
-  font-size: 11px;
-  color: #dddfe2;
-  font-family: 'Arial', sans-serif;
 }
 .header-schedule_icon {
   background: url(../../../images/icons/header-clock.png);
@@ -6625,6 +6747,39 @@ h4 {
 }
 .header-cart .header-cart_counts a {
   color: #ffffff;
+}
+/* Mobile ver of header */
+.header-mobile {
+  display: none;
+  background-color: #000;
+  padding: 10px 0;
+}
+.header-mobile .header-mobile_logo {
+  float: left;
+}
+.header-mobile .header-mobile_phone {
+  float: right;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: 'Eurofontc-bold';
+  margin-top: 9px;
+}
+.header-mobile .header-mobile_phone_icon {
+  background: url(../../../images/icons/header-phone.png);
+  width: 14px;
+  height: 14px;
+  margin: 5px 7px 0 0;
+}
+/*
+  Media queries
+*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    display: none;
+  }
+  .header-mobile {
+    display: block;
+  }
 }
 /*.carousel-inner > .item > img, .carousel-inner > .item > a > img {
   width: 100%;
@@ -6864,12 +7019,12 @@ h4 {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  background-position: center center;
+  background-position: center top;
 }
 /* Custom navigation arrows */
 .nav-arrows span {
   position: absolute;
-  z-index: 2000;
+  z-index: 1049;
   top: 50%;
   width: 12px;
   height: 22px;
@@ -7196,6 +7351,14 @@ h4 {
   }
   .responsive-carousel .sl-slider blockquote {
     font-size: 16px;
+  }
+}
+/*
+  Media queries
+*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .responsive-carousel {
+    display: none;
   }
 }
 .ctlg-selection {
@@ -7609,6 +7772,39 @@ h4 {
 .cart-result .cart-result_t > span {
   color: #c61633;
 }
+/*
+  Checkout styles
+*/
+.checkout_info {
+  margin-bottom: 25px;
+}
+.checkout_delivery {
+  padding: 5px 15px;
+  background-color: #e5f0f1;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.checkout_success {
+  margin: 30px 0 60px 0;
+  text-align: center;
+}
+.checkout_success p {
+  margin-bottom: 10px;
+  font-family: 'Eurofontc';
+  font-size: 24px;
+}
+/* custom grid for inputs */
+.col-sm-2.__mini {
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 15.8%;
+}
+.col-sm-6.__last {
+  padding-right: 15px;
+}
 .footer {
   margin-top: 23px;
   padding: 25px 15px;
@@ -7671,8 +7867,21 @@ h4 {
   color: #000000;
 }
 /*
+  Media queries
+*/
+@media (min-width: 992px) and (max-width: 1200px) {
+  .footer_cart .footer_cart_r {
+    margin-left: 15px;
+  }
+}
+/*
   Cosmetic helpfull classes
 */
 .req {
   color: #ff6600;
+}
+.add_input_file {
+  display: inline-block;
+  margin: 8px 0 0 0;
+  vertical-align: top;
 }

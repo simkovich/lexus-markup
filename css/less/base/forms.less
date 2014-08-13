@@ -18,3 +18,66 @@
   font-size: 12px;
   padding: 4px 12px;
 }
+
+.modal-form {
+  label {
+    margin-top: 5px;
+  }
+}
+
+.file-wrapper {
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  margin-top: 5px;
+
+  .button {
+    background: #4ec078; /* Old browsers */
+    background: -moz-linear-gradient(top,  #4ec078 0%, #23b178 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4ec078), color-stop(100%,#23b178)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #4ec078 0%,#23b178 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #4ec078 0%,#23b178 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #4ec078 0%,#23b178 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #4ec078 0%,#23b178 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ec078', endColorstr='#23b178',GradientType=0 ); /* IE6-9 */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: @font-regular;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
+    padding: 4px 18px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgba(0,0,0,.22);
+    letter-spacing: 1px;
+  }
+
+  input {
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 100px;
+    filter: alpha(opacity=1);
+    -moz-opacity: 0.01;
+    opacity: 0.01;
+  }
+}
+
+.custom_i_t {
+  width: 64%!important;
+  margin-right: 10px;
+  float: left;
+}
+
+.photo_name {
+  font-size: 13px;
+  color: #666;
+  margin-top: 10px;
+}

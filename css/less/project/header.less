@@ -2,7 +2,7 @@
   background-color: rgba(0, 0, 0, 0.75);
   padding: 15px 0;
   position: absolute;
-  z-index: 9999;
+  z-index: 9;
   width: 100%;
 }
 
@@ -13,12 +13,18 @@
 
 .header-info {
   float: right;
-}
 
-.header-info .header-phone {
-  font-size: @font-l;
-  color: @color-base-inverse;
-  font-family: @font-bold;
+  .header-phone {
+    font-size: @font-l;
+    color: @color-base-inverse;
+    font-family: @font-bold;
+  }
+
+  .header-schedule {
+    font-size: 11px;
+    color: #dddfe2;
+    font-family: @font-alt1;
+  }
 }
 
 .header-phone_icon {
@@ -26,12 +32,6 @@
   width: 14px;
   height: 14px;
   margin: 5px 7px 0 0;
-}
-
-.header-info .header-schedule {
-  font-size: 11px;
-  color: #dddfe2;
-  font-family: @font-alt1;
 }
 
 .header-schedule_icon {
@@ -97,5 +97,44 @@
     font-size: (@font-size-s)-1;
     margin-left: 25px;
     a {color: @color-base-inverse;}
+  }
+}
+/* Mobile ver of header */
+
+.header-mobile {
+  display: none;
+  background-color: #000;
+  padding: 10px 0;
+
+  .header-mobile_logo {
+    float: left;
+  }
+
+  .header-mobile_phone {
+    float: right;
+    font-size: (@font-l)-2;
+    color: @color-base-inverse;
+    font-family: @font-bold;
+    margin-top: 9px;
+  }
+
+  .header-mobile_phone_icon {
+    background: url(../../../images/icons/header-phone.png);
+    width: 14px;
+    height: 14px;
+    margin: 5px 7px 0 0;
+  }
+}
+/*
+  Media queries
+*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    display: none;
+  }
+  .header-mobile {
+    display: block;
+
   }
 }

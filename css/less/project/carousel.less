@@ -260,14 +260,14 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  background-position: center center;
+  background-position: center top;
 }
 
 /* Custom navigation arrows */
 
 .nav-arrows span {
   position: absolute;
-  z-index: 2000;
+  z-index: 1049;
   top: 50%;
   width: 12px;
   height: 22px;
@@ -511,4 +511,14 @@
     font-size: 16px;
   }
 
+}
+
+/*
+  Media queries
+*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .responsive-carousel {
+    display: none;
+  }
 }

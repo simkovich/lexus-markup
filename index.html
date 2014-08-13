@@ -21,7 +21,7 @@
       <section class="header">
           <div class="container">
               <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
                       <div class="header-logo">
                           <a href="#"><img src="images/logo/lexus.png" alt=""/></a>
                       </div>
@@ -38,14 +38,14 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-lg-6 col-md-6">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
                       <div class="header-actions">
                           <div class="header-actions_vin">
                               <a class="header-actions_vin_btn btn-main" href="#777">Запрос по VIN</a>
                           </div>
                           <div class="header-actions_feedback">
-                              <a class="header-actions_feedback_call btn-main" href="#777">Заказать звонок</a><br>
-                              <i class="header-actions_feedback_icon"></i> <a class="header-actions_feedback_mail" href="#777">Написать письмо</a>
+                              <a class="header-actions_feedback_call btn-main" data-toggle="modal" data-target="#feedback" href="#777">Заказать звонок</a><br>
+                              <i class="header-actions_feedback_icon"></i> <a class="header-actions_feedback_mail" data-toggle="modal" data-target="#write_to_us" href="#777">Написать письмо</a>
                           </div>
                       </div>
                       <div class="header-cart">
@@ -60,6 +60,25 @@
                   </div>
               </div>
           </div>
+      </section>
+      <section class="header-mobile">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-xs-12">
+              <div class="header-mobile_logo">
+                <a href="#"><img src="images/logo/lexus.png" alt=""/></a>
+              </div>
+              <div class="header-mobile_phone">
+                <i class="header-mobile_phone_icon"></i> +7 (495) 506-51-00
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <div class="header-mobile_actions">
+                <a href="#777"><span class="glyphicon glyphicon-phone"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- /Header part -->
       <!-- Responsive carousel -->
@@ -81,8 +100,10 @@
             <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
               <div class="sl-slide-inner">
                 <div class="bg-img bg-img-2"></div>
-                <h2>Regula aurea.</h2>
-                <blockquote><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p></blockquote>
+                <div class="container">
+                  <h3 class="sl-mark">Lexus</h3>
+                  <h2 class="sl-model">RC concept car</h2>
+                </div>
               </div>
             </div>
           </div><!-- /sl-slider -->
@@ -306,10 +327,118 @@
       <!-- /Main content section -->
     </div>
     <!-- / Wrapper -->
+    <!-- Modal Feedback -->
+    <div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="feedbackLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="feedbackLabel">Заказать обратный звонок</h4>
+          </div>
+          <div class="modal-body">
+            <form class="modal-form">
+              <div class="form-group row">
+                <label class="col-sm-3">ФИО:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control"/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3">Телефон:</label>
+                <div class="col-sm-9">
+                  <input type="tel" class="form-control tel_mask"/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3">Время:</label>
+                <div class="col-sm-9">
+                  <select class="form-control">
+                    <option>с 9:00 до 12:00</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-9 col-sm-offset-3">
+                  <input type="submit" value="Отправить" class="btn-main"/>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Modal Feedback -->
+    <!-- Modal Write to us -->
+    <div class="modal fade" id="write_to_us" tabindex="-1" role="dialog" aria-labelledby="writeLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="writeLabel">Написать нам</h4>
+          </div>
+          <div class="modal-body">
+            <form class="modal-form">
+              <div class="form-group row">
+                <label class="col-sm-3">ФИО:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control"/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3">Выберите файл:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control custom_i_t"/>
+                  <span class="file-wrapper">
+                    <input type="file" name="photo" id="photo" />
+                    <span class="button">Обзор</span>
+                  </span>
+                  <a href="#" class="add_input_file"><img src="images/icons/add.png" alt=""/></a>
+                  <div class="clearfix"></div>
+                  <div class="photo_name">
+                    <span>Рисунок заднего моста и балки.jpg</span> <a href="#777" class="rem_photo"><img src="images/icons/rem.png"
+                                                                                                         alt=""/></a>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3">Телефон:</label>
+                <div class="col-sm-9">
+                  <input type="tel" class="form-control tel_mask"/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3">E-mail:</label>
+                <div class="col-sm-9">
+                  <input type="email" class="form-control"/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3">Сообщение:</label>
+                <div class="col-sm-9">
+                  <textarea rows="5" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-9 col-sm-offset-3">
+                  <input type="submit" value="Отправить" class="btn-main"/>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Modal Write to us -->
     <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.inputmask.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/carousel/jquery.ba-cond.min.js"></script>
     <script src="js/carousel/jquery.slitslider.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      $(function(){
+        $(".tel_mask").inputmask("+7 (999) 999-99-99");
+      });
+    </script>
   </body>
 </html>
