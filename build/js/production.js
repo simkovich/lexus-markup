@@ -2516,6 +2516,8 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 }));
 
 $(function(){
+  /* activating tooltips */
+  $('.header-mobile_actions a').tooltip();
   /* catalog selection hover (appear list of model)*/
   $(".ctlg-selection_box_i").hover(
       function(){

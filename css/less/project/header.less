@@ -102,7 +102,6 @@
 /* Mobile ver of header */
 
 .header-mobile {
-  display: none;
   background-color: #000;
   padding: 10px 0;
 
@@ -124,17 +123,51 @@
     height: 14px;
     margin: 5px 7px 0 0;
   }
+
+  .header-mobile_actions {
+    float: left;
+    margin-top: 8px;
+
+    a {
+      color: #fff;
+
+      span {
+        font-size: 25px;
+        margin-right: 25px;
+      }
+    }
+  }
+
+  .header-mobile_cart {
+    float: right;
+    margin-top: 8px;
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+    }
+  }
 }
 /*
   Media queries
 */
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .header {
-    display: none;
-  }
+
+@media (max-width: 767px) {
   .header-mobile {
-    display: block;
+    .header-mobile_logo,
+    .header-mobile_phone,
+    .header-mobile_cart,
+    .header-mobile_actions {
+      width: 100%;
+      text-align: center;
+
+      a:last-child {
+        span {
+          margin-right: 0;
+        }
+      }
+    }
 
   }
 }

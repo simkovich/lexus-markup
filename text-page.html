@@ -17,88 +17,111 @@
   <!-- Wrapper -->
     <div class="wrapper">
       <!-- Header part -->
-      <section class="header">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-6">
-                      <div class="header-logo">
-                          <a href="#"><img src="images/logo/lexus.png" alt=""/></a>
-                      </div>
-                      <div class="header-info">
-                          <div class="header-phone">
-                              <i class="header-phone_icon"></i> +7 (495) 506-51-00
-                          </div>
-                          <div class="header-schedule">
-                              <i class="header-schedule_icon"></i>
-                              <div class="header-schedule_info">
-                                  <div class="header-schedule_info_time">с 9-00 до 19-00</div>
-                                  <div class="header-schedule_info_days">пн, вт, ср, чт, пт, <span>сб, вск.</span></div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                      <div class="header-actions">
-                          <div class="header-actions_vin">
-                              <a class="header-actions_vin_btn btn-main" href="#777">Запрос по VIN</a>
-                          </div>
-                          <div class="header-actions_feedback">
-                              <a class="header-actions_feedback_call btn-main" href="#777">Заказать звонок</a><br>
-                              <i class="header-actions_feedback_icon"></i> <a class="header-actions_feedback_mail" href="#777">Написать письмо</a>
-                          </div>
-                      </div>
-                      <div class="header-cart">
-                          <div class="header-cart_title">
-                              <i class="cart-light"></i> Корзина
-                          </div>
-                          <div class="header-cart_counts">
-                              <div class="header-cart_counts_prods">Товаров <a href="#777">6</a> шт.</div>
-                              <div class="header-cart_counts_summ">Сумма: 20 000 руб.</div>
-                          </div>
-                      </div>
-                  </div>
+      <section class="header hidden-xs hidden-sm">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="header-logo">
+                <a href="#"><img src="images/logo/lexus.png" alt=""/></a>
               </div>
+              <div class="header-info">
+                <div class="header-phone">
+                  <i class="header-phone_icon"></i> +7 (495) 506-51-00
+                </div>
+                <div class="header-schedule">
+                  <i class="header-schedule_icon"></i>
+                  <div class="header-schedule_info">
+                    <div class="header-schedule_info_time">с 9-00 до 19-00</div>
+                    <div class="header-schedule_info_days">пн, вт, ср, чт, пт, <span>сб, вск.</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="header-actions">
+                <div class="header-actions_vin">
+                  <a class="header-actions_vin_btn btn-main" href="#777">Запрос по VIN</a>
+                </div>
+                <div class="header-actions_feedback">
+                  <a class="header-actions_feedback_call btn-main" data-toggle="modal" data-target="#feedback" href="#777">Заказать звонок</a><br>
+                  <i class="header-actions_feedback_icon"></i> <a class="header-actions_feedback_mail" data-toggle="modal" data-target="#write_to_us" href="#777">Написать письмо</a>
+                </div>
+              </div>
+              <div class="header-cart">
+                <div class="header-cart_title">
+                  <i class="cart-light"></i> Корзина
+                </div>
+                <div class="header-cart_counts">
+                  <div class="header-cart_counts_prods">Товаров <a href="#777">6</a> шт.</div>
+                  <div class="header-cart_counts_summ">Сумма: 20 000 руб.</div>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
+      <section class="header-mobile hidden-md hidden-lg">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-xs-12">
+              <div class="header-mobile_logo">
+                <a href="#"><img src="images/logo/lexus.png" alt=""/></a>
+              </div>
+              <div class="header-mobile_phone">
+                <i class="header-mobile_phone_icon"></i> +7 (495) 506-51-00
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <div class="header-mobile_actions">
+                <a href="#777"><span class="glyphicon glyphicon-wrench"></span></a>
+                <a data-toggle="modal" data-target="#feedback" href="#777"><span class="glyphicon glyphicon-phone-alt"></span></a>
+                <a data-toggle="modal" data-target="#write_to_us" href="#777"><span class="glyphicon glyphicon-pencil"></span></a>
+              </div>
+              <div class="header-mobile_cart">
+                <a href="#777"><span class="glyphicon glyphicon-shopping-cart"></span> Корзина: 5 шт.</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- /Header part -->
       <!-- Responsive carousel -->
-      <section class="responsive-carousel">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <section class="responsive-carousel hidden-xs hidden-sm">
+        <div id="slider" class="sl-slider-wrapper">
 
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                </ol>
+          <div class="sl-slider">
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="images/carousel/slide1.png" alt="Slide1" class="img-responsive">
-                        <div class="container carousel-caption">
-                            <p>Lexus</p>
-                            <h3>RC Concept car</h3>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/carousel/slide2.png" alt="Slide1" class="img-responsive">
-                        <div class="container carousel-caption">
-                            <p>Lexus</p>
-                            <div class="clearfix"></div>
-                            <h3>RC Concept car</h3>
-                        </div>
-                    </div>
+            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+              <div class="sl-slide-inner">
+                <div class="bg-img bg-img-1"></div>
+                <div class="container">
+                  <h3 class="sl-mark">Lexus</h3>
+                  <h2 class="sl-model">RC concept car</h2>
                 </div>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="arrow-left"></span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="arrow-right"></span>
-                </a>
+              </div>
             </div>
-        </section>
+
+            <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+              <div class="sl-slide-inner">
+                <div class="bg-img bg-img-2"></div>
+                <div class="container">
+                  <h3 class="sl-mark">Lexus</h3>
+                  <h2 class="sl-model">RC concept car</h2>
+                </div>
+              </div>
+            </div>
+          </div><!-- /sl-slider -->
+          <nav id="nav-arrows" class="nav-arrows">
+            <span class="nav-arrow-prev">Previous</span>
+            <span class="nav-arrow-next">Next</span>
+          </nav>
+          <nav id="nav-dots" class="nav-dots">
+            <span class="nav-dot-current"></span>
+            <span></span>
+          </nav>
+
+        </div><!-- /slider-wrapper -->
+      </section>
       <!-- /Responsive carousel -->
       <!-- Main content section -->
       <section class="main-cnt">
@@ -156,6 +179,8 @@
     <!-- / Wrapper -->
     <script src="js/vendor/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/carousel/jquery.ba-cond.min.js"></script>
+    <script src="js/carousel/jquery.slitslider.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

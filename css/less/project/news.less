@@ -44,3 +44,47 @@
     }
   }
 }
+
+/*
+  Media queries
+*/
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .news-block {
+    .news-block_preview {
+      width: 29%;
+    }
+    .news-block_info {
+      width: 68%;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .news-block {
+    .news-block_preview {
+      width: 29%;
+    }
+    .news-block_info {
+      width: 68%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .news-block {
+    .news-block_preview {
+      width: 100%;
+      text-align: center;
+      margin-right: 0;
+    }
+    .news-block_info {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  .img-news {
+    margin: 0 auto 10px auto;
+  }
+}
